@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(53, 53, 248);
+}
+
+.container {
+    margin: 50px 100px;
+}
+
+.container .grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 480px;
+    height: 450x;
+    background: darkcyan;
+    border: 2px solid black;
+}
+
+.container .grid .square {
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+}
+
+.mole {
+    background-image: url('mole.jpg');
+    background-size: cover;
+}
+
+.left {
+    float: left;
+}
+
+h1 {
+    text-align: right;
+    font-weight: bold;
+    color: black;
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span {
+    color: wheat;
+}
+
+.right {
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    background: white;
+    transition: 0.1s;
+    border: 0;
+    height: 30px;
+    outline: 0;
+}
+
+input:focus {
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 10px 2px 4px 0px black;
+}
+
+button {
+    background: rgb(137, 240, 34);
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    transition: ease 2s;
+}
+
+button:hover {
+    background: rgb(43, 78, 8);
+    color: wheat;
+    cursor: pointer;
+    width: 5%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Whack a mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="grid left">
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+            <div class="square" id="9"></div>
+            <div id="data" class="data">
+                <p>Player:<span id="title">Anonime</span> </h3>
+                    <p>Score: <span id="score">0</span> </h3>
+                        <p>Time:<span id="time-left">0</span> </h3>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Whack a mole!</h1>
+            <label for="name">Name </label><input type="text" name="name" id="name" placeholder="name" autocomplete="off" onchange="ChangeName()">
+            <label for="time">Time </label><input type="number" name="time" id="time" placeholder="time" autocomplete="off" onchange="ChangeName()">
+            <button onclick="initGame()">Begin </button>
+            <h2>Record</h2>
+            <h4 id="record"> Record: <span id="bestScore">0</span> </h4>
+        </div>
+    </div>
+</body>
+<script src="app.js" charset="utf-8"></script>
+
+</html>
